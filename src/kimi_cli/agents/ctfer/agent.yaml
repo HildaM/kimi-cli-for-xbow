@@ -1,0 +1,21 @@
+version: 1
+agent:
+  name: "ctfer"
+  system_prompt_path: ./system.md
+  system_prompt_args:
+    ROLE_ADDITIONAL: ""
+  tools:
+    # Core Tools
+    - "kimi_cli.tools.think:Think"
+    - "kimi_cli.tools.todo:SetTodoList"
+    # - "kimi_cli.tools.bash:Bash"
+    # - "kimi_cli.tools.file:ReadFile"
+    # - "kimi_cli.tools.file:Glob"
+    # - "kimi_cli.tools.file:Grep"
+    # - "kimi_cli.tools.file:WriteFile"
+    # - "kimi_cli.tools.file:StrReplaceFile"
+    # Web & Recon
+    - "kimi_cli.tools.web:SearchWeb"
+    - "kimi_cli.tools.web:FetchURL"
+
+  subagents: {}
