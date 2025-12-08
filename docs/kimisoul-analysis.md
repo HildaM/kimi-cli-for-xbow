@@ -320,6 +320,9 @@ getattr(getattr(call, "function", None), "name", "") or ""
 
 ### 4. D-Mail 时间回溯机制
 
+![alt text](image.png)
+- [d-mail 理解：压缩上下文的方式之一，用于裁剪当前上下文](https://x.com/tunahorse21/status/1983600710353875037)
+
 ```mermaid
 sequenceDiagram
     participant Agent as Agent
